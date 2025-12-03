@@ -9,12 +9,13 @@
             "
     />
     <title>Rain</title>
-    <script src="rain.js"></script>
+    <script type="module" src="main.js" defer></script>
 </head>
 <body id="_body">
     <canvas id="_canvas"></canvas>
-    <script>
-        window.addEventListener("load", (event) => {
+    <script type="module">
+        import { execRain } from './main.js'
+        window.addEventListener("load", () => {
             execRain();
         });
     </script>
